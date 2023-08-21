@@ -1,0 +1,98 @@
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	background: #151212;
+	color: #ffffff;
+}
+
+.center-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 100%;
+}
+
+.task {
+	width: 500px;
+}
+
+@media screen and (max-width: 800px) {
+	.task {
+		width: 340px;
+	}
+}
+
+.task__form {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 5px;
+}
+
+.task__input {
+	outline: none;
+	border: none;
+	background: #949494;
+	border-radius: 5px;
+	flex: 0 0 78%;
+	height: 50px;
+	padding: 0 25px;
+	font-size: 18px;
+	color: #ffffff;
+}
+
+.task__create {
+	border: none;
+	flex: 0 0 20%;
+	height: 50px;
+	background: #949494;
+	border-radius: 5px;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+.red {
+	color: red;
+}
+
+.filters {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	margin-bottom: 5px;
+}
+
+.filters__button {
+	border: none;
+	flex: 0 0 32.57%;
+	background: #949494;
+	border-radius: 5px;
+	color: #ffffff;
+	cursor: pointer;
+	height: 25px;
+}
+
+.tasks__item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #949494;
+	height: 35px;
+	border-radius: 5px;
+	padding: 5px 15px;
+}
+
+.tasks__item:not(:last-child) {
+	margin-bottom: 5px;
+}
+
+.tasks__right {
+	display: flex;
+	align-items: center;
+	gap: 3px;
+}
