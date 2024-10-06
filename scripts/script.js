@@ -73,6 +73,8 @@ function createTask(event) {
 	const formData = new FormData(event.target);
 	const taskData = Object.fromEntries(formData.entries());
 
+	if (!taskData.task.trim()) return;
+
 	tasksStorage = [...tasksStorage, { ...taskData, id: randomId(), status: false, important: false }];
 
 	saveAndRerenderTasks(tasksStorage);
